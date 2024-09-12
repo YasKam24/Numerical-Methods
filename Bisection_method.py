@@ -8,7 +8,7 @@ def Bisection(a, b, f):
     maxiter = 1000
     i = 1
     while i < maxiter or (b - a) < tol:
-        p = a + (b - a)/2
+        p   = a + (b - a)/2
         if f(p) == 0 or (b - a)/2 < tol: 
             return p, i
         if f(a)*f(p) > 0:
